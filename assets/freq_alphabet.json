@@ -1,0 +1,30 @@
+{
+    "items": [
+        { "character": "e", "probability": 4663 },
+        { "character": "a", "probability": 3452 },
+        { "character": "t", "probability": 3345 },
+        { "character": "i", "probability": 2914 },
+        { "character": "o", "probability": 2882 },
+        { "character": "s", "probability": 2850 },
+        { "character": "n", "probability": 2767 },
+        { "character": "r", "probability": 2543 },
+        { "character": "h", "probability": 1739 },
+        { "character": "l", "probability": 1583 },
+        { "character": "d", "probability": 1582 },
+        { "character": "c", "probability": 1306 },
+        { "character": "u", "probability": 1207 },
+        { "character": "m", "probability": 1092 },
+        { "character": "p", "probability": 827 },
+        { "character": "f", "probability": 811 },
+        { "character": "g", "probability": 744 },
+        { "character": "y", "probability": 733 },
+        { "character": "w", "probability": 694 },
+        { "character": "b", "probability": 672 },
+        { "character": "v", "probability": 408 },
+        { "character": "k", "probability": 366 },
+        { "character": "j", "probability": 84 },
+        { "character": "x", "probability": 72 },
+        { "character": "q", "probability": 34 },
+        { "character": "z", "probability": 32 }
+    ]
+}

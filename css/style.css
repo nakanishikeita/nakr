@@ -1,0 +1,230 @@
+/* line 1, ../sass/style.scss */
+body {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* line 7, ../sass/style.scss */
+.inner {
+  margin: 0 auto;
+}
+@media screen and (min-width: 320px) {
+  /* line 7, ../sass/style.scss */
+  .inner {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 7, ../sass/style.scss */
+  .inner {
+    width: 600px;
+  }
+}
+
+/* line 25, ../sass/style.scss */
+.line {
+  height: 5px;
+  background: url("../img/rainbow.png") repeat-x;
+}
+
+/* line 33, ../sass/style.scss */
+.banner {
+  height: 60px;
+  background: #fbfbfb;
+  border-bottom: 1px solid #ddd;
+}
+/* line 37, ../sass/style.scss */
+.banner h1 {
+  float: left;
+  margin-right: 40px;
+}
+/* line 40, ../sass/style.scss */
+.banner h1 a {
+  display: block;
+  height: 60px;
+  line-height: 75px;
+  opacity: 1;
+}
+/* line 45, ../sass/style.scss */
+.banner h1 a:hover {
+  opacity: .7;
+}
+/* line 48, ../sass/style.scss */
+.banner h1 a img {
+  width: 70px;
+  height: 29px;
+}
+/* line 55, ../sass/style.scss */
+.banner .nav li {
+  float: left;
+  margin-right: 15px;
+}
+/* line 58, ../sass/style.scss */
+.banner .nav li a {
+  color: #aaa;
+  font-size: .8em;
+  font-weight: bold;
+  line-height: 60px;
+  text-decoration: none;
+}
+/* line 64, ../sass/style.scss */
+.banner .nav li a:hover {
+  color: #eeae33;
+}
+
+/* line 72, ../sass/style.scss */
+.main {
+  padding-top: 40px;
+}
+/* line 74, ../sass/style.scss */
+.main .description {
+  margin: 0 auto;
+  width: 80%;
+  font-size: .9em;
+}
+
+/* line 82, ../sass/style.scss */
+.output {
+  text-align: center;
+}
+/* line 84, ../sass/style.scss */
+.output li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 5em;
+}
+
+/* line 91, ../sass/style.scss */
+.ui {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+/* line 96, ../sass/style.scss */
+.ui .selector {
+  display: inline-block;
+}
+/* line 98, ../sass/style.scss */
+.ui .selector li {
+  display: inline;
+  float: left;
+}
+/* line 102, ../sass/style.scss */
+.ui .selector li input[type="radio"] {
+  display: none;
+}
+/* line 105, ../sass/style.scss */
+.ui .selector li label {
+  padding: 4px 20px;
+  color: #ccc;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+/* line 114, ../sass/style.scss */
+.ui .selector li label[for=hiragana].is-selected {
+  color: #ed6724;
+  border-bottom: 3px solid #ed6724;
+}
+/* line 114, ../sass/style.scss */
+.ui .selector li label[for=katakana].is-selected {
+  color: #eeae33;
+  border-bottom: 3px solid #eeae33;
+}
+/* line 114, ../sass/style.scss */
+.ui .selector li label[for=alphabet].is-selected {
+  color: #00ab64;
+  border-bottom: 3px solid #00ab64;
+}
+/* line 123, ../sass/style.scss */
+.ui p input[name="word"] {
+  margin-top: 20px;
+  padding: 0 15px;
+  width: 100%;
+  height: 75px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #666;
+  font-size: 2.2em;
+  text-align: center;
+}
+/* line 135, ../sass/style.scss */
+.ui p input[name="word"].focus {
+  border: 1px solid #999;
+}
+/* line 138, ../sass/style.scss */
+.ui p button {
+  margin-top: 20px;
+  width: 100%;
+  height: 55px;
+  border: none;
+  border-radius: 5px;
+  background: #eeae33;
+  -webkit-box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+/* line 152, ../sass/style.scss */
+.ui p button:hover {
+  background: #eebe33;
+}
+
+/* line 159, ../sass/style.scss */
+.ad-235 {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 235px;
+}
+
+/* line 165, ../sass/style.scss */
+.ad-468 {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 468px;
+}
+
+/* line 171, ../sass/style.scss */
+.social-buttons {
+  float: right;
+  margin-top: 20px;
+}
+
+/* line 176, ../sass/style.scss */
+.footer {
+  margin-top: 70px;
+  text-align: right;
+}
+/* line 180, ../sass/style.scss */
+.footer nav {
+  float: left;
+}
+/* line 182, ../sass/style.scss */
+.footer nav ul {
+  display: inline-block;
+}
+/* line 184, ../sass/style.scss */
+.footer nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+/* line 187, ../sass/style.scss */
+.footer nav ul li a {
+  color: #777;
+  font-size: .8em;
+  text-decoration: none;
+}
+/* line 191, ../sass/style.scss */
+.footer nav ul li a:hover {
+  text-decoration: underline;
+}
+/* line 198, ../sass/style.scss */
+.footer small {
+  float: right;
+  color: #777;
+}

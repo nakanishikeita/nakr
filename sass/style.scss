@@ -1,0 +1,203 @@
+body {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.inner {
+    margin: 0 auto;
+    @media screen and (min-width: 320px) {
+        width: 320px;
+    }
+    @media screen and (min-width: 600px) {
+        width: 600px;
+    }
+}
+
+
+$type: "hiragana", "katakana", "alphabet";
+// red, orange, green, blue
+$colors: #ed6724, #eeae33, rgb(0, 171, 100), rgb(0, 136, 149);
+
+$banner-height: 70px;
+
+///////////////////
+.line {
+    height: 5px;
+    background: url("../img/rainbow.png") repeat-x;
+}
+///////////////////
+
+$banner-height: 60px;
+
+.banner {
+    height: $banner-height;
+    background: #fbfbfb;
+    border-bottom: 1px solid #ddd;
+    h1 {
+        float: left;
+        margin-right: 40px;
+        a {
+            display: block;
+            height: $banner-height;
+            line-height: $banner-height + 15px;
+            opacity: 1;
+            &:hover {
+                opacity: .7;
+            }
+            img {
+                width: 70px;
+                height: 29px;
+            }
+        }
+    }
+    .nav {
+        li {
+            float: left;
+            margin-right: 15px;
+            a {
+                color: #aaa;
+                font-size: .8em;
+                font-weight: bold;
+                line-height: $banner-height;
+                text-decoration: none;
+                &:hover {
+                    color: nth($colors, 2);
+                }
+            }
+        }
+    }
+}
+
+.main {
+    padding-top: 40px;
+    .description {
+        margin: 0 auto;
+        width: 80%;
+        font-size: .9em;
+        // text-align: center;
+    }
+}
+
+.output {
+    text-align: center;
+    li {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 5em;
+    }
+}
+
+.ui {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    .selector {
+        display: inline-block;
+        li {
+            display: inline;
+            float: left;
+
+            input[type="radio"] {
+                display: none;
+            }
+            label {
+                padding: 4px 20px;
+                color: #ccc;
+                font-size: 1.2em;
+                cursor: pointer;
+            }
+
+            @for $i from 1 through 3 {
+                $temp: nth($type, $i);
+                label[for=#{$temp}].is-selected {
+                    color: nth($colors, $i);
+                    border-bottom: 3px solid nth($colors, $i);
+                }
+            }
+        }
+    }
+
+    p {
+        input[name="word"] {
+            margin-top: 20px;
+            padding: 0 15px;
+            width: 100%;
+            height: 75px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            color: #666;
+            font-size: 2.2em;
+            text-align: center;
+        }
+        input[name="word"].focus {
+            border: 1px solid #999;
+        }
+        button {
+            margin-top: 20px;
+            width: 100%;
+            height: 55px;
+            border: none;
+            border-radius: 5px;
+            background: nth($colors, 2);
+            -webkit-box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+            box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+            color: #fff;
+            cursor: pointer;
+            outline: none;
+            font-size: 1.4em;
+            font-weight: bold;
+            &:hover {
+                background: #eebe33;
+            }
+        }
+    }
+}
+
+.ad-235 {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 235px;
+}
+
+.ad-468 {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 468px;
+}
+
+.social-buttons {
+    float: right;
+    margin-top: 20px;
+}
+
+.footer {
+    margin-top: 70px;
+    text-align: right;
+
+    nav {
+        float: left;
+        ul {
+            display: inline-block;
+            li {
+                display: inline;
+                margin-right: 10px;
+                a {
+                    color: #777;
+                    font-size: .8em;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    small {
+        float: right;
+        color: #777;
+    }
+}
+
